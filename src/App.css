@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #FFF7FA;
+  --grey: #D3D3D3;
+  --black: #000505;
+  --pink: #FFEAEA;
+  --pinker: #d8606aca;
+  --pinkest: #c0545d;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+      'navbar'
+      'main' 
+      'footer'
+  ;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--pink);
+}
+
+.navbar {
+  grid-area: navbar;
+}
+.main {
+  grid-area: main;
+
+}
+.footer {
+  grid-area: footer;
+}

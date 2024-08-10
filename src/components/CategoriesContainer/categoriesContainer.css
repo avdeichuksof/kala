@@ -1,0 +1,15 @@
+.cat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    margin: auto;
+}
+
+
+@media(min-width: 768px) {
+    .cat-container {
+        flex-flow: row wrap;
+    }
+}
