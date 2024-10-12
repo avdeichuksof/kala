@@ -1,0 +1,25 @@
+.filter-container {
+    width: fit-content;
+    display: flex;
+    margin: 1rem 2rem;
+    align-items: center;
+}
+
+.filter-container label {
+    font-family: var(--font);
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.filter-selector {
+    padding: 5px 10px;
+    border: none;
+    background-color: #fae4e1;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px #f7b3aa, -3px -3px 6px #f7b3aa;
+    cursor: pointer;
+}
+
+.filter-selector option {
+    cursor: pointer;
+}

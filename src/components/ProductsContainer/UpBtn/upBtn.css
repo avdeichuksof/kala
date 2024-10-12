@@ -1,0 +1,25 @@
+.up-container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.up-btn {
+    opacity: .8;
+    background-color: var(--pinkest);
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    color: var(--pink);
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+}
+
+.up-btn:hover {
+    opacity: 1;
+}

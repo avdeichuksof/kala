@@ -6,7 +6,7 @@
 .header .nav-container {
     display: flex;
     width: 60%;
-    height: 50px;
+    height: 60px;
     align-items: center;
     justify-self: flex-start;
     justify-content: space-between;
@@ -19,7 +19,15 @@
 }
 
 ul.menu-closed {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    z-index: 1;
+    opacity: 0; /* Transición de visibilidad */
+    visibility: hidden; /* Elemento oculto cuando está cerrado */
+    transform: translateX(-100%); /* Empieza fuera de la vista */
+    transition: all 0.5s ease-out; /* Transición suave */
 }
 
 ul.menu-open {
@@ -30,16 +38,20 @@ ul.menu-open {
     background-color: var(--pink);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     color: var(--pinkest);
+    font-family: var(--titles);
     width: 50%;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    transition: all .6s ease;
     padding-top: 100px;
     padding-bottom: 30px;
     overflow: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
     z-index: 1;
+    transition: all .6s ease-in-out;
 }
 
 ul.menu-open li {
@@ -67,6 +79,7 @@ ul.menu-open li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 fieldset {
@@ -83,14 +96,15 @@ fieldset legend {
 .rrss {
     display: flex;
     padding: 1rem 0;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .rrss-item {
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .rrss-item:hover {

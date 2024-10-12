@@ -10,22 +10,22 @@ const CategoriesContainer = () => {
 
     return (
         <div className="cat-container">
-            <Link>
+            <Link to='/catalogo/pulseras' className='link'>
                 <CategoryCard className='category' name='PULSERAS' bg={pulserasImg} />
             </Link>
-            <Link>
+            <Link className='link'>
                 <CategoryCard className='category' name='HOLA' bg='https://placedog.net/500' />
             </Link>
-            <Link>
+            <Link className='link'>
                 <CategoryCard className='category' name='HOLA' bg='https://placedog.net/500' />
             </Link>
-            <Link>
+            <Link className='link'>
                 <CategoryCard className='category' name='HOLA' bg='https://placedog.net/500' />
             </Link>
-            <Link>
+            <Link className='link'>
                 <CategoryCard className='category' name='HOLA' bg='https://placedog.net/500' />
             </Link>
-            <Link>
+            <Link className='link'>
                 <CategoryCard className='category' name='HOLA' bg='https://placedog.net/500' />
             </Link>
         </div>

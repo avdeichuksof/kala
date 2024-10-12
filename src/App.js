@@ -1,9 +1,11 @@
 import './App.css'
-import { BrowserRouter/* , Routes, Route  */} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // components
 import Navbar from './components/Navbar/Navbar'
-import CategoriesContainer from './components/CategoriesContainer/CategoriesContainer'
+
+import Index from './routes/Index/Index'
+import Catalogo from './routes/Catalogo/Catalogo'
 
 function App() {
   return (
@@ -12,7 +14,11 @@ function App() {
       <BrowserRouter>
         <Navbar className="navbar" />
         <div className='main'>
-          <CategoriesContainer />
+          <Routes>
+            <Route exact path='/' element={<Index />} />
+            <Route exact path='/catalogo' element={<Catalogo />} />
+          </Routes>
+          
         </div>
       </BrowserRouter>
     </div>
@@ -20,3 +26,5 @@ function App() {
 }
 
 export default App;
+
+/* AGREGARLE TRANSICIÓN AL NAVBAR CUANDO SE ABRE */
