@@ -1,5 +1,5 @@
 import './categoryCard.css'
-import React from "react"
+import 'animate.css'
 
 const CategoryCard = ({name, bg}) => {
     return (

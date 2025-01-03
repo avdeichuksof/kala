@@ -1,5 +1,5 @@
 import './productCard.css'
-import React from 'react'
+import 'animate.css'
 
 const ProductCard = ({product}) => {
     return (

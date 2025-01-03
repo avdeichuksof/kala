@@ -1,6 +1,4 @@
 import './infoContainer.css'
-import React from 'react'
-
 
 import InfoWidget from './InfoWidget/InfoWidget'
 

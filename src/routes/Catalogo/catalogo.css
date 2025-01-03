@@ -1,0 +1,28 @@
+.catalogo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+}
+
+a.back-btn {
+    color: var(--pinkest);
+    text-decoration: none;
+    width: fit-content;
+    transition: all ease .5s;
+}
+
+a.black-btn:hover {
+    color: var(--pink);
+    cursor: pointer;
+}
+
+.back-btn svg {
+    margin-right: 0.5rem;
+    vertical-align: -3px;
+}
