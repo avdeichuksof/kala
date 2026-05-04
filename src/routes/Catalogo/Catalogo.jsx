@@ -7,7 +7,7 @@ import ProductsContainer from '../../components/ProductsContainer/ProductsContai
 
 const Catalogo = () => {
     const [selectedCat, setSelectedCat] = useState('')
-    const categories = ['pulseras', 'carteras', 'vestidos', 'bufandas', 'amigurumis', 'decoraciones']
+    const categories = ['pulseras', 'charms', 'manoplas', 'llaveros', 'collares', 'decoraciones']
     let { cat } = useParams()
     const navigate = useNavigate()
 

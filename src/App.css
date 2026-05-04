@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
 
 * {
   margin: 0;
@@ -12,9 +13,11 @@
   --grey: #D3D3D3;
   --black: #000505;
   --pink: #F7C5BD;
+  --pinky: #fbdeda;
   --pinkest: #cc483c;
   --titles: "Philosopher", sans-serif;
   --font: "Mulish", sans-serif;
+  --logo: "Waterfall", cursive;
 }
 
 .grid-container{

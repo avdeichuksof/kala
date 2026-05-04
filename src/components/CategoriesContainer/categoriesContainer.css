@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 1rem 0;
+    margin-bottom: 0;
+    overflow: hidden;
 }
 
 .link{
