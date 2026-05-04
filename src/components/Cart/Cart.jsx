@@ -2,7 +2,7 @@ import { useCart } from '../../context/CartContext'
 import './cart.css'
 
 function Cart({onClose}) {
-    const {cart, deleteProduct, emptyCart, total} = useCart()
+    const {cart, deleteProd, emptyCart, total} = useCart()
 
     const sendWpp = () => {
         const number = process.env.REACT_APP_NUMERO
@@ -27,7 +27,7 @@ function Cart({onClose}) {
                         <div key={p.id} className='cart-item'>
                             <span>{p.title} x{p.cantidad}</span>
                             <span>${p.price * p.cantidad}</span>
-                            <button className='cart-btn-x' onClick={() => deleteProduct(p.id)}>✕</button>
+                            <button className='cart-btn-x' onClick={() => deleteProd(p.id)}>✕</button>
                         </div>
                     ))}
 
