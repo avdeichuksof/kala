@@ -5,7 +5,9 @@ import { CartProvider } from './context/CartContext'
 
 // components
 import Navbar from './components/Navbar/Navbar'
+import Toast from './components/Toast/Toast'
 
+// routes
 import Index from './routes/Index/Index'
 import Catalogo from './routes/Catalogo/Catalogo'
 
@@ -23,6 +25,7 @@ function App() {
             </Routes>
           </div>
         </BrowserRouter>
+        <Toast />
       </div>
     </CartProvider>
   )
