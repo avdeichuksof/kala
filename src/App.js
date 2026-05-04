@@ -1,6 +1,5 @@
 import './App.css'
 import 'animate.css'
-import { Suspense, useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
 
